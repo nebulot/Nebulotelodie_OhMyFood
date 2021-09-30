@@ -1,16 +1,16 @@
 {
   "name": "writing-sass",
   "version": "1.0.0",
-  "description": "Joe Blow's portfolio",
+  "description": "ohmyfood",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    "url": "git+https://github.com/nebulot/Nebulotelodie_3_17092021.git"
   },
-  "author": "gerkx",
+  "author": "elodienebulot",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
