@@ -16,11 +16,11 @@ body, html{
 }
 
 .navigation_map {
-    background-color: #f3f3f3;
+    background-color:#e5e5e5 ;
     display: flex;
     justify-content: center;
     font-size: 1.1rem;
-    padding: 20px
+    padding: 20px;
 }
 
 .text-map {
@@ -31,21 +31,22 @@ body, html{
 .navigation_search {
     text-align: center;
     padding: 20px;
-    background-color: #fafafa;
+    background-color: #f0f0f0;
 }
 
 p {
     font-size: thin;
 }
 
-.hero_btn {
+.button {
     cursor: pointer;
     color: white;
     font-size: 1,1rem;
     background-color: pink;
     padding: 15px;
     font-weight: bold;
-    border-radius: 30px;    
+    border-radius: 30px;  
+    margin-top: 10px;  
 }
 
 .filtres {
@@ -53,6 +54,38 @@ p {
     padding-top: 20px;
 }
 
+ol {
+    counter-reset: filtres_step;
+}
 
+li {
+    list-style-type: none;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    counter-increment: filtres_step;
+    padding: 1.5rem;
+    margin: 1rem 0 1rem .75rem;
+    margin-top: 1rem;
+    box-shadow: gray;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+}
+
+
+li:before {
+    content: counter(filtres_step);
+	padding: 13px;
+	margin-right: 8px;
+	background: #9356dc;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	font-size: 0.8em;
+	color: white;		
+}
+
+.icon {
+    margin-right: 1rem;
+    color: #7e7e7e
+}
 
 
