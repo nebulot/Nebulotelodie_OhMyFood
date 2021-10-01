@@ -9,26 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <title>OHMYFOOD</title>
     <script src="https://kit.fontawesome.com/b012d5ddf3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="public/css/styles.css"/>
 
 </head>
 
 <body>
-    <div class="acceuil_page">
-        <div class="acceuil_page--logo">
-
-        </div>
-    </div>
-
+    
     <main>
-        <header>
-            <h1 class="headerlogo">ohmyfood</h1>
+        <header class="header">
+            <h1 class="header-logo">ohmyfood</h1>
         </header>
 
         <nav class="navigation">
             <div class="navigation_map">
                 <i class="fas fa-map-marker-alt"></i>
-                <span>Paris,Belleville</span>
+                <span class="text-map">Paris,Belleville</span>
             </div>
             <div class="navigation_search">
                 <h2>Réservez le menu qui
@@ -40,6 +35,7 @@
         </nav>
 
         <section class="filtres">
+            <div class="filtres_container">
             <h2 class="filtres_title">Fonctionnement</h2>
             <ol class="filtres_step">
                 <li><i class="fas fa-mobile-alt"></i>
@@ -54,6 +50,7 @@
                     <span>Dégustez au restaurant</span>
                 </li>
             </ol>
+            </div>
         </section>
 
         <section id="restaurants">
