@@ -6,7 +6,7 @@ body, html{
 /*--------------header-----------*/
 .header {
     padding: 10px;
-    box-shadow: 0 0 10px  gray;
+    box-shadow: 0 0 10px grey;
 }
 
 
@@ -16,7 +16,7 @@ body, html{
 }
 
 .navigation_map {
-    background-color:#e5e5e5 ;
+    background-color: #eaeaea;
     display: flex;
     justify-content: center;
     font-size: 1.1rem;
@@ -31,7 +31,7 @@ body, html{
 .navigation_search {
     text-align: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #f6f6f6;
 }
 
 p {
@@ -54,18 +54,23 @@ p {
     padding-top: 20px;
 }
 
+.filtres_title {
+    margin-left: 10px;
+}
+
+.filtres_step {
+   padding-left: 20px;
+}
+
 ol {
     counter-reset: filtres_step;
 }
 
 li {
     list-style-type: none;
-    margin-bottom: 30px;
-    margin-top: 30px;
     counter-increment: filtres_step;
-    padding: 1.5rem;
-    margin: 1rem 0 1rem .75rem;
-    margin-top: 1rem;
+    padding: 20px 20px 20px 0px;
+    margin: 16px 12px 16px 0px;
     box-shadow: gray;
     border-radius: 30px;
     background-color: #f6f6f6;
@@ -74,9 +79,9 @@ li {
 
 li:before {
     content: counter(filtres_step);
-	padding: 13px;
+	padding: 5px 5px 5px 11px;
 	margin-right: 8px;
-	background: #9356dc;
+    background: #9356dc;
 	-moz-border-radius: 60px;
 	border-radius: 60px;
 	font-size: 0.8em;
@@ -86,6 +91,58 @@ li:before {
 .icon {
     margin-right: 1rem;
     color: #7e7e7e
+}
+
+#restaurants {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 5px;
+    background-color: #f6f6f6;
+}
+
+.cartes {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.carte {
+    background-color: #fff;
+    border-radius: 30px;
+    
+}
+
+figure {
+    margin: 0px;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    
+}
+
+.sticker {
+    position: absolute;
+    padding: 10px;
+    background-color:#99e2d0;
+}
+
+
+
+
+.footer {
+    background-color: #353535;
+}
+
+.footer_logo {
+    padding-left: 26px;
+    color: white;
+    font-family: Shrikhand,"cursive";
+}
+
+.footer_title {
+    list-style: none;
 }
 
 
