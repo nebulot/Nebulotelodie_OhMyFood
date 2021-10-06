@@ -14,12 +14,15 @@ header {
 .return {
   width: 19%;
   font-size: larger;
-  margin-top: 36px;
+  margin-top: 16px;
   margin-left: 18px;
+  color: #353535;
 }
 
 .header-logo {
   font-family: shrikhand;
+  margin-top: 3px;
+margin-bottom: 3px;
 }
 
 img {
@@ -50,7 +53,7 @@ img {
   justify-content: flex-end;
   font-size: x-large;
   padding-top: 35px;
-  padding-left: 112px;
+  padding-left: 62px;
 }
 
 h2 {
