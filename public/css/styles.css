@@ -98,7 +98,6 @@ span {
 }
 
 .footer_li1, .footer_li2 {
-    color:white;
     font-size: 1.1em;
     padding-bottom: 10px;
 }
@@ -154,7 +153,7 @@ img {
     flex-wrap: wrap;
 }
 
-figcaption {
+.foot_argument {
     margin-left: 15px;
     width: 70%;
 }
@@ -193,9 +192,15 @@ figcaption {
     font-size: larger;
 }
 
+.footer_link {
+    text-decoration: none;
+    color: white;
+}
+
 .footer_title {
     list-style: none;
     padding-left: 20px;
 }
+
 
 
