@@ -4,7 +4,8 @@
   "description": "Projet trois : ohmyfood",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed",
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed"
   },
   "repository": {
     "type": "git",
@@ -12,8 +13,5 @@
   },
   "author": "elodienebulot",
   "license": "ISC",
-  "bugs": {
-    "url": "git hub issues"
-  },
-  "homepage": "git hub readme"
+  "browserslist":"last 4 versions"
 }

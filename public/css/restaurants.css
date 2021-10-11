@@ -22,7 +22,7 @@ header {
 .header-logo {
   font-family: shrikhand;
   margin-top: 3px;
-margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 
 img {
@@ -89,7 +89,7 @@ h3 {
 }
 
 .menu_deroulant-card-compo {
-    width: 95%;
+  width: 95%;
 }
 
 .menu_deroulant-card-price {
@@ -106,8 +106,8 @@ h4 {
 }
 
 .menu_deroulant-command {
-    margin-top: 50px;
-    margin-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 .command {
@@ -123,6 +123,10 @@ h4 {
   background: linear-gradient(to bottom right, #e671da 45%, #b862db 100%);
 }
 
+.command:hover {
+  background-color: #fff;
+  box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.5);
+}
 
 span {
   font-weight: bold;
