@@ -4,7 +4,7 @@
   "description": "Projet trois : ohmyfood",
   "main": "index.html",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed",
+    "sass": "sass --watch ./sass/main.scss:./public/css/styles.css --style compressed",
     "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed"
   },
   "repository": {
