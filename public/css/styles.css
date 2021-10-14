@@ -17,6 +17,18 @@ html {
   text-align: center;
 }
 
+/*------------------header-restaurants---------------------*/
+.fas.fa-arrow-left {
+  width: 19%;
+  font-size: larger;
+  margin-top: 16px;
+  margin-left: 18px;
+  color: #353535;
+  margin-right: 66px;
+}
+
+
+/*---------------------navigation-acceuil-------------------*/
 .navigation_map {
   background-color: #eaeaea;
   display: flex;
@@ -37,11 +49,7 @@ html {
   background-color: #f6f6f6;
 }
 
-p {
-  font-size: thin;
-}
-
-.button {
+.button, .command {
   cursor: pointer;
   border: 0;
   color: white;
@@ -52,15 +60,146 @@ p {
   margin: 10px 58px;
   font-weight: bold;
   width: 58%;
-  display: flex;
+  display: inline-table;
   transition-duration: 0.25s;
   background-image: linear-gradient(to bottom right, #e671da 32%, #b862db 100%);
 }
 
-.button:hover {
+.command {
+  margin-left: 92px;
+}
+
+.button:hover, .command:hover {
   box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.5);
   filter: brightness(110%);
 }
+  
+/*-------------------------navigation-restaurant--------------*/
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.menu_deroulant {
+  background-color: #f6f6f6;
+  border-radius: 45px 45px 0 0;
+  margin-top: 175px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.menu_deroulant-entete {
+  display: flex;
+  flex: wrap;
+}
+.menu_deroulant-heart {
+  color: #7e7e7e;
+  display: flex;
+  justify-content: flex-end;
+  font-size: x-large;
+  padding-top: 35px;
+  padding-left: 62px;
+}
+
+h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.menu_deroulant-card {
+  background-color: #fff;
+  border-radius: 11px;
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 15px;
+  box-shadow: 0px 6px 6px -2px rgba(0, 0, 0, 0.2);
+  margin-left: 22px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 20px;
+  overflow: hidden;
+  cursor: pointer;    
+}
+
+.compo_description,
+.compo {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu_deroulant-card-compo {
+  width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu_deroulant-card-price {
+  font-weight: bolder;
+  display: flex;
+  align-items: flex-end;
+  width: 5%;
+  padding-bottom: 12px;
+}
+
+.menu_deroulant-card-validation {
+  background-color: #99e2d0;
+  margin: -17px -100px -8px 22px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  transition: margin-right 0.2s ease-in-out;
+}
+
+.menu_deroulant-card:hover .menu_deroulant-card-validation {
+  margin-right: -20px;
+}
+
+.fa-check {
+  display: flex;
+  background-color: #f6f6f6;
+  color: #99e2d0;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-180deg);
+  transition-duration: 0.5s;
+}
+
+.fa-check.fas::before {
+  padding-top: 6px;
+  padding-left: 6px;
+}
+
+.menu_deroulant-card:hover .fa-check {
+  transform: rotate(0);
+}
+
+.menu_deroulant-command {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-family: Shrikhand, "cursive";
+  padding-left: 25px;
+  padding-top: 10px;
+}
+
+p {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+
+/*--------------acceuil------------*/
 
 .filtres {
   padding-left: 10px;
@@ -107,15 +246,7 @@ span {
   font-weight: bold;
 }
 
-.footer_li1,
-.footer_li2 {
-  font-size: 1.1em;
-  padding-bottom: 10px;
-}
 
-.footer_li1 {
-  font-weight: bold;
-}
 .icon {
   margin-right: 16px;
   padding-left: 7px;
@@ -194,6 +325,8 @@ img {
   margin-top: 10px;
   color: #1a463b;
 }
+
+/*----------------heart-----------------*/
 .heart {
   cursor: pointer;
   position: absolute;
@@ -235,7 +368,7 @@ img {
   content: "";
   opacity: 1;
 }
-
+/*------------------footer-commun---------*/
 .footer {
   background-color: #353535;
   padding-top: 20px;
@@ -257,4 +390,14 @@ img {
 .footer_title {
   list-style: none;
   padding-left: 20px;
+}
+
+.footer_li1,
+.footer_li2 {
+  font-size: 1.1em;
+  padding-bottom: 10px;
+}
+
+.footer_li1 {
+  font-weight: bold;
 }
