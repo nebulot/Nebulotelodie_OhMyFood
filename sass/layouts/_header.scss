@@ -1,0 +1,16 @@
+.header {
+    padding: 10px;
+  }
+  
+  .header-logo {
+    font-family: shrikhand;
+    text-align: center;
+  }
+
+  .header--block {
+    object-fit: cover;
+    width: 100%;
+    height: 252px;
+    position: absolute;
+    z-index: 1;
+  }
