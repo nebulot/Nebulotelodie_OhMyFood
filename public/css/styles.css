@@ -3,9 +3,8 @@ html {
   font-family: Roboto, sans-serif;
   margin: 0;
 }
-
 .acceuil {
-  height: 528px;
+  z-index: 1;
 }
 
 /*--------spinner---------*/
@@ -14,7 +13,7 @@ html {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 3;
+  z-index: 1;
   animation: opacity_reverse 1s 1s linear both;
 }
 
@@ -24,16 +23,18 @@ html {
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 
 .spinner_text {
-  width: 100%;
-  height: 100%;
   color: #ff79da;
+  width: 100px;
+  height: 100px;
+  margin: auto;
   position: absolute;
-  top: 46%;
-  left: 45%;
+  top: 63px;
+  left: 25px;
   right: 0;
   bottom: 0;
 }
@@ -87,8 +88,6 @@ html {
   object-fit: cover;
   width: 100%;
   height: 252px;
-  position: absolute;
-  z-index: 1;
 }
 
 /*---------------------navigation-acceuil-------------------*/
@@ -125,17 +124,12 @@ h2 {
   border-radius: 30px;
   font-size: 1em;
   box-shadow: 0px 6px 6px 2px rgba(0, 0, 0, 0.2);
-  padding: 20px 25px;
-  margin: 10px 58px;
+  padding: 20px 20px;
+  margin: 10px 38px;
   font-weight: bold;
-  width: 58%;
   display: inline-table;
   transition-duration: 0.25s;
   background-image: linear-gradient(to bottom right, #e671da 32%, #b862db 100%);
-}
-
-.command {
-  margin-left: 92px;
 }
 
 .button:hover,
@@ -148,9 +142,9 @@ h2 {
 .menu_deroulant {
   background-color: #f6f6f6;
   border-radius: 45px 45px 0 0;
-  margin-top: 207px;
-  position: absolute;
-  z-index: 3;
+  margin-top: -68px;
+  position: relative;
+  z-index: 0;
   width: 100%;
 }
 
@@ -258,8 +252,9 @@ h4 {
 }
 
 .menu_deroulant-command {
-  margin-top: 50px;
-  margin-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center;
 }
 
 h5 {
@@ -268,10 +263,33 @@ h5 {
   padding-top: 10px;
 }
 
-.menu_deroulant-part {
-  overflow: hidden;
+.menu_deroulant-card {
+  animation: slideup 2s forwards;
+  opacity: 0;
+}
+.card1 {
+  animation-delay: 0s;
+}
+.card2 {
+  animation-delay: 0.3s;
+}
+.card3 {
+  animation-delay: 0.6s;
 }
 
+@keyframes slideup {
+  0% {
+    transform: translatey(-10px);
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translatey(-2px);
+    opacity: 1;
+  }
+}
 /*--------------acceuil------------*/
 
 .filtres {
@@ -335,7 +353,7 @@ span {
   background-color: #f5edff;
 }
 
-#restaurants {
+.restaurants {
   padding-left: 20px;
   padding-top: 20px;
   padding-right: 5px;
@@ -447,9 +465,6 @@ a {
   background-color: #353535;
   padding-top: 20px;
   padding-bottom: 10px;
-  position: relative;
-  z-index: 3;
-  top: 1560px;
 }
 
 .footer_logo {
@@ -477,4 +492,58 @@ a {
 
 .footer_li1 {
   font-weight: bold;
+}
+
+@media screen and (max-width:1280px) and (min-width: 990px) {
+  .filtres {
+    flex: 2;
+    display: flex;
+  }
+
+  .filtres_box {
+    width: 100%;
+  }
+
+  .filtres_icons {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .restaurants {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 44%;
+  }
+
+  .restaurants_box {
+    margin-left: 30px;
+  }
+
+  #blocks {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .cartes {
+    display: flex;
+    flex-direction: initial;
+    margin-right: 0px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .carte1,
+  .carte2,
+  .carte3,
+  .carte4 {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    margin: 10px;
+    height: 193px;
+  }
+  .carte {
+    height: 124px;
+  }
 }
