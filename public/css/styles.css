@@ -175,6 +175,7 @@ h4 {
   padding-bottom: 9px;
   font-weight: 400;
   font-size: 16px;
+  width: 45px;
 }
 
 .menu_deroulant-card {
@@ -494,7 +495,7 @@ a {
   font-weight: bold;
 }
 
-@media screen and (max-width:1280px) and (min-width: 990px) {
+@media screen and (max-width: 1280px) and (min-width: 990px) {
   .filtres {
     flex: 2;
     display: flex;
@@ -545,5 +546,26 @@ a {
   }
   .carte {
     height: 124px;
+  }
+  /****responsive fiche menu*******/
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .menu_deroulant-part {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .menu_deroulant-entete {
+    margin-left: 50px;
+    font-size: larger;
+  }
+  .heart {
+    margin-right: 40px;
+  }
+  .footer {
+    padding-left: 40px;
   }
 }
