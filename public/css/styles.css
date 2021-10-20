@@ -558,11 +558,11 @@ a {
   .menu_deroulant-part {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
   }
 
   .menu_deroulant-entete {
-    margin-left: 50px;
+    margin-left: 30px;
     font-size: larger;
   }
   .heart {
