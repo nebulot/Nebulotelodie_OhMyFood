@@ -424,46 +424,60 @@ a {
 }
 
 /*----------------heart-----------------*/
-.heart {
-  cursor: pointer;
+.far.fa-heart {
+  font-size: 1.5rem;
   position: absolute;
-  transform-origin: bottom;
-  font-size: 25px;
-  right: 33px;
+  right: 25px;
+  bottom: 25px;
   opacity: 1;
-  margin-top: 30px;
 }
 
 .fa-heart::before {
   content: "\f004";
 }
 
-.heart-animation {
+.fas.heart-animation {
+  font-size: 1.5rem;
   position: absolute;
-  cursor: pointer;
-  opacity: 0;
-  transform-origin: bottom;
-  font-size: 26px;
-  bottom: 2px;
-  display: flex;
-  transition-duration: 0.3s;
-}
-
-.fa-gradient {
-  background: -webkit-linear-gradient(#e671da, #b862db);
-  background-clip: text;
+  right: 25px;
+  bottom: 25px;
+  background: linear-gradient(#e671da, #b862db);
+  background-clip: border-box;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
 }
 
 .heart-animation:hover {
-  transition-duration: 0.25s;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.menu_deroulant .far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
   opacity: 1;
 }
 
-.heart-animation:hover::after {
-  content: "";
-  opacity: 1;
+.menu_deroulant .fas.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  background: linear-gradient(#ff79da, #9356dc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
 }
+
+.menu_deroulant .heart-animation:hover {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
 /*------------------footer-commun---------*/
 .footer {
   background-color: #353535;
