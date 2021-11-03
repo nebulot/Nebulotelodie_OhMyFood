@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Roboto";
-  src: url ("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap")
- }
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap")}
  
 body,
 html {
@@ -60,7 +59,7 @@ html {
 }
 
 @keyframes spin {
-  O% {
+  0% {
     tranform: rotate(0deg);
   }
   100% {
@@ -224,8 +223,8 @@ h4 {
 
 .menu_deroulant-card-validation {
   background-color: #99e2d0;
-  margin: -17px -175px -8px 22px;
-  width: 20%;
+  margin: -17px -254px -8px 22px;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,17 +239,18 @@ h4 {
 .fa-check {
   display: flex;
   background-color: #f6f6f6;
+  align-items:center;
   color: #99e2d0;
   border-radius: 20px;
-  width: 30px;
-  height: 30px;
-  transform: rotate(-180deg);
-  transition-duration: 0.5s;
+  width: 25px;
+  height: 25px;
+  transform: rotate(-360deg);
+  transition-duration: 0.7s;
 }
 
 .fa-check.fas::before {
-  padding-top: 6px;
-  padding-left: 6px;
+  padding-top: 2px;
+  padding-left: 5px;
 }
 
 .menu_deroulant-card:hover .fa-check {
@@ -595,3 +595,5 @@ a {
     padding-left: 40px;
   }
 }
+
+
