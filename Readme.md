@@ -6,7 +6,7 @@ Création d'un site mobil first sur les restaurants gastronomiques :
 Le projet consiste à réaliser un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. L'objectif est de réduire les temps d'attente au restaurant et d'offrir une expérience client fluide et moderne.
 
 ### 📱 Vue maquette sur mobile, ci-dessous :
-![Vue maquette sur mobile](https://camo.githubusercontent.com/ddd91e114474e932046515ff52197b87c834e5232f93f0fe2ba0a1ab94ec131e/68747470733a2f2f757365722e6f632d7374617469632e636f6d2f75706c6f61642f323032302f30382f32342f31353938323630353930383431385f4d61717565747465732532304f686d79666f6f642e6a7067)
+![Vue maquette sur mobile](https://camo.githubusercontent.com/ddd91e114474e932046515ff52197b87c834e5232f93f0fe2ba0a1ab94ec131e/68747470733a2f2f757365722e6f632d7374617469632e636f6d2f75706c6f61642f323032302f30382f32342f31353938323630353930383431385f4d61717565747465732532304f686d79666f6f642e6a7067 /)
 
 ## 🗂️ Éléments transmis :
     - Logo d'Ohmyfood!
