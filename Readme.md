@@ -39,5 +39,5 @@ Pour voir le brief complet cliquer sur ce lien :
 [Brief](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf)
   
 W3C validator 
-["W3C Fichier"](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnebulot.github.io%2FNebulotelodie_3_OhMyFood%2F#file).
+["W3C Fichier"](https://validator.w3.org/nu/?doc=https%3A%2F%2Fnebulot.github.io%2FNebulotelodie_OhMyFood%2F#file).
  
